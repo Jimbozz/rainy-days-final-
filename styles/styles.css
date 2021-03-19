@@ -1,0 +1,164 @@
+body {
+  margin: 0%;
+}
+
+/*navigation*/
+
+nav {
+  margin-left: 55px;
+}
+.logo {
+  height: auto;
+  max-width: 150px;
+}
+nav li {
+  display: inline;
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+li a {
+  text-decoration: none;
+}
+nav ul {
+  padding: 0px;
+}
+nav a {
+  padding: 10px;
+}
+nav li a:hover {
+  text-decoration: underline;
+  color: #0a0d00;
+}
+.active {
+  color: #0a0d00;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+h3 {
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+/*Header section*/
+
+.welcome {
+  background-image: url("/images/group-277@3x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 80vh;
+  position: relative;
+}
+.welcome__content {
+  position: absolute;
+  text-align: left;
+  top: 200px;
+  left: 80px;
+  bottom: none;
+}
+
+#cta-header {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+header div {
+  display: flex;
+  background-color: #f6f6f6;
+  padding: 20px;
+  align-items: center;
+}
+.header-text-main {
+  width: 250px;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+header,
+footer {
+  background-color: #f6f6f6;
+  color: #0a0d00;
+}
+header {
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header a {
+  color: #0a0d00;
+}
+
+.collection-name {
+  margin: auto;
+}
+/*Homepage cards*/
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: 1100px;
+}
+.column {
+  max-height: 300px;
+}
+.product-cards {
+  margin: 200px 80px 0px 80px;
+  height: 600px;
+}
+
+.photo > img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+.card-header {
+  margin: auto;
+  margin-top: 5px;
+}
+.card-price {
+  margin: auto;
+  margin-top: 5px;
+  color: #898987;
+}
+
+/*manufacturing section on homepage*/
+.manufacture-image {
+  margin: auto;
+  min-height: 200px;
+  max-width: 1000px;
+  display: block;
+  justify-content: center;
+}
+
+.manufacture-image {
+  background-image: url("/images/group-277@3x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 70vh;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media only screen and (max-width: 800px) {
+  .row {
+    width: 100%;
+    display: grid;
+    margin-bottom: 20px;
+    grid-gap: 200px;
+  }
+}
