@@ -2,6 +2,17 @@ body {
   margin: 0%;
 }
 
+h1 {
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+h3 {
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
 /*navigation*/
 
 nav {
@@ -33,17 +44,8 @@ nav li a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-}
-p {
-  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
-}
-h3 {
-  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
-}
+/*end of navigation*/
+
 /*Header section*/
 
 .welcome {
@@ -104,27 +106,7 @@ header a {
   margin: auto;
 }
 /*Homepage cards*/
-.row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  height: 1100px;
-}
-.column {
-  max-height: 300px;
-}
-.product-cards {
-  margin: 200px 80px 0px 80px;
-  height: 600px;
-}
 
-.photo > img {
-  object-fit: cover;
-  width: 100%;
-  height: 400px;
-}
 .card-header {
   margin: auto;
   margin-top: 5px;
@@ -135,14 +117,26 @@ header a {
   color: #898987;
 }
 
-/*manufacturing section on homepage*/
-.manufacture-image {
-  margin: auto;
-  min-height: 200px;
-  max-width: 1000px;
-  display: block;
-  justify-content: center;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em 0;
+  text-align: left;
+  margin: 100px 0px 0px 0px;
+  flex-direction: row;
+  max-width: auto;
 }
+
+.card {
+  width: auto;
+}
+
+.img {
+  background-image: url("/images/group-277@3x.jpg");
+}
+
+/*manufacturing section on homepage*/
 
 .manufacture-image {
   background-image: url("/images/group-277@3x.jpg");
@@ -154,11 +148,10 @@ header a {
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media only screen and (max-width: 800px) {
-  .row {
-    width: 100%;
-    display: grid;
-    margin-bottom: 20px;
-    grid-gap: 200px;
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
