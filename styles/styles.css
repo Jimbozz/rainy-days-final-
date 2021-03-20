@@ -2,7 +2,8 @@ body {
   margin: 0%;
 }
 
-h1 {
+h1,
+h2 {
   font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 p {
@@ -10,8 +11,28 @@ p {
   font-size: 1em;
 }
 h3 {
-  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
+}
+
+.link-button {
+  color: #d67e3e;
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  width: 200px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.link-button:hover {
+  opacity: 1;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.fa-arrow-right {
+  margin-left: 10%;
 }
 /*navigation*/
 
@@ -56,6 +77,9 @@ nav li a:hover {
   background-position-y: bottom;
   min-height: 80vh;
   position: relative;
+  min-width: none;
+  display: block;
+  margin: auto;
 }
 .welcome__content {
   position: absolute;
@@ -97,6 +121,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+.nav-links {
+  margin: auto;
 }
 header a {
   color: #0a0d00;
@@ -149,28 +176,69 @@ header a {
 
 .test-container {
   margin: 100px;
-  -webkit-filter: brightness(20%);
-  filter: brightness(30%);
+  position: relative;
 }
 
 .image-one {
   max-width: 100%;
   width: auto;
   height: 100;
+  -webkit-filter: brightness(20%);
+  filter: brightness(30%);
+  z-index: 0;
 }
 
+.text-container {
+  margin: auto;
+  min-height: 100%;
+  max-height: auto;
+}
 .first-txt {
   position: absolute;
-  top: 17px;
-  left: 20px;
+  top: 160px;
+  left: 50px;
   color: white;
+  z-index: 1;
 }
 
 .second-txt {
   position: absolute;
-  top: 17px;
-  left: 150px;
+  top: 200px;
+  left: 50px;
+  color: white;
+  z-index: 1;
+  max-width: 40%;
+  line-height: 130%;
 }
+
+.mnf .link-button {
+  position: absolute;
+  top: 380px;
+  left: 50px;
+  text-align: left;
+}
+
+/*end of manufacturing section on homepage*/
+
+/*trail section on homepage*/
+.trail {
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  width: auto;
+  flex: 1;
+}
+.box img {
+  object-fit: cover;
+  -webkit-filter: brightness(20%);
+  filter: brightness(50%);
+  max-width: 100%;
+  min-width: 100%;
+  height: 70vh;
+}
+
+/*end of trail section on homepage*/
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 700px) {
@@ -193,6 +261,25 @@ header a {
 
 @media screen and (min-width: 400px) {
   .card-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .test-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .trail {
+    flex-direction: column;
+    margin: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .image-one {
     flex-direction: row;
   }
 }
