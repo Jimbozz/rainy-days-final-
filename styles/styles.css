@@ -117,41 +117,82 @@ header a {
   color: #898987;
 }
 
-.container {
+.card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: space-evenly;
-  padding: 1em 0;
-  text-align: left;
-  margin: 100px 0px 0px 0px;
+  padding: none;
+  margin: 200px 50px 200px 50px;
   flex-direction: row;
-  max-width: auto;
+  flex-wrap: wrap;
 }
 
-.card {
-  width: auto;
+.item {
+  flex: 1;
+  padding: 4px;
+  margin: 0px;
+  height: 400px;
+  max-width: 320px;
+  position: relative;
+  flex: 100%;
+  margin-bottom: 60px;
 }
 
-.img {
-  background-image: url("/images/group-277@3x.jpg");
+.item img {
+  height: 100%;
+  width: 100%;
+  padding: auto;
+  object-fit: cover;
 }
 
 /*manufacturing section on homepage*/
 
-.manufacture-image {
-  background-image: url("/images/group-277@3x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  min-height: 70vh;
+.test-container {
+  margin: 100px;
+  -webkit-filter: brightness(20%);
+  filter: brightness(30%);
+}
+
+.image-one {
+  max-width: 100%;
+  width: auto;
+  height: 100;
+}
+
+.first-txt {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  color: white;
+}
+
+.second-txt {
+  position: absolute;
+  top: 17px;
+  left: 150px;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (min-width: 40em) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media screen and (max-width: 700px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 800px) {
+  .item {
+    flex: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .card-container {
+    flex-direction: row;
   }
 }
