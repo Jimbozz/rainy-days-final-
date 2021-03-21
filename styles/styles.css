@@ -109,14 +109,12 @@ nav li a:hover {
 /*Header section*/
 
 .welcome {
-  background-image: url("/images/group-277@3x.jpg");
+  background-image: url("../images/group-277@2x.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
+  background-position: center center;
+  background-attachment: fixed;
   min-height: 80vh;
   position: relative;
-  min-width: none;
   display: block;
   margin: auto;
 }
@@ -229,8 +227,14 @@ header a {
 /*manufacturing section on homepage*/
 
 .test-container {
-  margin: 50px;
+  background-image: url("/images/mask-group-7@2x.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
   position: relative;
+  display: block;
+  margin: 0px 50px;
+  filter: ;
 }
 
 .image-one {
@@ -367,8 +371,14 @@ h2 {
 /*start of insulation section on homepage*/
 
 .insulation-system {
+  background-image: url("/images/mask-group-10@2x.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
   position: relative;
-  width: 100%;
+  display: block;
+  margin: none;
+  filter: ;
 }
 
 .insulation-image {
@@ -376,10 +386,8 @@ h2 {
 }
 
 .insulation-text {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 20px;
   text-align: center;
   color: #0a0d00;
   line-height: 1.5;
