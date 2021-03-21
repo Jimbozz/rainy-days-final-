@@ -372,10 +372,11 @@ h2 {
   flex-flow: row wrap;
   justify-content: center safe;
   background-color: #0a0d00;
+  margin: 0px 50px;
 }
 
 .footer-info {
-  min-width: 300px;
+  min-width: 250px;
   margin: 20px;
   flex: 10px;
 }
@@ -389,10 +390,67 @@ h2 {
 }
 
 hr {
-  width: 90%;
-  background-color: red;
+  width: 97%;
+  background-color: white;
   height: 1px;
   border: 0;
+  opacity: 20%;
+}
+
+.footer-nav-left {
+  color: white;
+  min-width: 250px;
+  margin: 20px;
+  flex: 10px;
+}
+
+.footer-nav-right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center safe;
+  background-color: #0a0d00;
+  margin: 0px 50px;
+}
+
+.right-side {
+  min-width: 250px;
+  margin: 20px;
+  flex: 10px;
+}
+
+.right-side > h5,
+address,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-side > address {
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-size: 0.83em;
+  line-height: 2em;
+  opacity: 40%;
+}
+.footer-links {
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-size: 0.83em;
+  line-height: 2em;
+  opacity: 40%;
+}
+
+.bottom-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-info {
+  color: white;
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7em;
+  opacity: 40%;
+  margin: 200px 40px 40px 40px;
 }
 /*end of footer*/
 
