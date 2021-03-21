@@ -14,7 +14,10 @@ h3 {
   font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
 }
-
+h5 {
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+/*link button*/
 .link-button {
   color: #d67e3e;
   font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
@@ -33,6 +36,25 @@ h3 {
 
 .fa-arrow-right {
   margin-left: 10%;
+}
+
+/*button*/
+
+.button {
+  background-color: #d67e3e;
+  color: #fff;
+  font-size: 1em;
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 60px;
+  border-radius: 2px;
+  text-decoration: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  opacity: 1;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 /*navigation*/
 
@@ -90,9 +112,12 @@ nav li a:hover {
 }
 
 #cta-header {
+  position: relative;
+}
+#header-link {
   position: absolute;
-  bottom: 40px;
-  right: 40px;
+  top: 500px;
+  right: -30px;
 }
 header div {
   display: flex;
@@ -156,7 +181,7 @@ header a {
 
 .item {
   flex: 1;
-  padding: 4px;
+  padding: 0px;
   margin: 0px;
   height: 400px;
   max-width: 320px;
@@ -175,7 +200,7 @@ header a {
 /*manufacturing section on homepage*/
 
 .test-container {
-  margin: 100px;
+  margin: 50px;
   position: relative;
 }
 
@@ -186,12 +211,14 @@ header a {
   -webkit-filter: brightness(20%);
   filter: brightness(30%);
   z-index: 0;
+  position: relative;
 }
 
 .text-container {
   margin: auto;
   min-height: 100%;
   max-height: auto;
+  width: auto;
 }
 .first-txt {
   position: absolute;
@@ -224,21 +251,150 @@ header a {
 .trail {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 60px 0px;
 }
-.box {
-  width: auto;
-  flex: 1;
-}
-.box img {
-  object-fit: cover;
+.trail-image {
   -webkit-filter: brightness(20%);
-  filter: brightness(50%);
+  filter: brightness(75%);
   max-width: 100%;
-  min-width: 100%;
-  height: 70vh;
+}
+.box-one {
+  flex: 1;
+  position: relative;
+}
+.text-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.box-two {
+  flex: 1;
+  position: relative;
+}
+
+.text-right {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  text-align: left;
+  color: #0a0d00;
+}
+.text-right > p,
+h2 {
+  margin: 0px;
+}
+
+.price-right {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #0a0d00;
+  font-weight: bold;
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.prev,
+.next {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  margin-top: -20px;
+  width: 10px;
+  height: 10px;
+  opacity: 70%;
+}
+.next {
+  right: 20px;
+  border-bottom: 3px solid #0a0d00;
+  border-right: 3px solid #0a0d00;
+  transform: rotate(-45deg);
+  transition: right 0.5s;
+}
+
+.prev {
+  left: 20px;
+  border-bottom: 3px solid #0a0d00;
+  border-left: 3px solid #0a0d00;
+  transform: rotate(45deg);
+  transition: left 0.5s;
+}
+
+.next:hover {
+  right: 1em;
+}
+
+.prev:hover {
+  left: 1em;
 }
 
 /*end of trail section on homepage*/
+
+/*start of insulation section on homepage*/
+
+.insulation-system {
+  position: relative;
+}
+
+.insulation-image {
+  width: 100%;
+}
+
+.insulation-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #0a0d00;
+  line-height: 1.5;
+}
+
+.insulation-button {
+  margin-top: 30px;
+}
+
+/*end of insulation section on homepage*/
+
+/*start of footer*/
+
+.footer-style {
+  background: #0a0d00;
+}
+
+.footer-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center safe;
+  background-color: #0a0d00;
+}
+
+.footer-info {
+  min-width: 300px;
+  margin: 20px;
+  flex: 10px;
+}
+
+.footer-info > h5 {
+  color: white;
+}
+.footer-info > p {
+  color: white;
+  opacity: 40%;
+}
+
+hr {
+  width: 90%;
+  background-color: red;
+  height: 1px;
+  border: 0;
+}
+/*end of footer*/
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 700px) {
@@ -265,16 +421,16 @@ header a {
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 800px) {
   .test-container {
-    flex-direction: row;
+    margin: none;
   }
 }
 
 @media screen and (max-width: 700px) {
   .trail {
     flex-direction: column;
-    margin: 80px;
+    margin: 0px;
   }
 }
 
