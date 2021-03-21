@@ -59,8 +59,26 @@ h5 {
 /*navigation*/
 
 nav {
-  margin-left: 55px;
+  display: none;
 }
+#hamburger-menu {
+  display: none;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+.fa-circle {
+  position: absolute;
+}
+.hamburger-icon {
+  color: #0a0d00;
+  position: absolute;
+  right: 50px;
+}
+.header-nav {
+  position: relative;
+}
+
 .logo {
   height: auto;
   max-width: 150px;
@@ -71,13 +89,12 @@ nav li {
 }
 li a {
   text-decoration: none;
+  padding: 10px;
 }
 nav ul {
   padding: 0px;
 }
-nav a {
-  padding: 10px;
-}
+
 nav li a:hover {
   text-decoration: underline;
   color: #0a0d00;
@@ -110,14 +127,26 @@ nav li a:hover {
   left: 80px;
   bottom: none;
 }
-
+.welcome__content-one {
+  position: absolute;
+  text-align: right;
+  bottom: 50px;
+  right: 50px;
+  margin: auto;
+  width: 250px;
+}
+.welcome__content > p {
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  opacity: 50%;
+}
 #cta-header {
-  position: relative;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
 }
 #header-link {
-  position: absolute;
-  top: 500px;
-  right: -30px;
+  position: relative;
 }
 header div {
   display: flex;
@@ -339,10 +368,11 @@ h2 {
 
 .insulation-system {
   position: relative;
+  width: 100%;
 }
 
 .insulation-image {
-  width: 100%;
+  width: 100vw;
 }
 
 .insulation-text {
