@@ -35,7 +35,7 @@ h5 {
 }
 
 .fa-arrow-right {
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 /*button*/
@@ -234,24 +234,10 @@ header a {
   position: relative;
   display: block;
   margin: 0px 50px;
-  filter: ;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
-
-.image-one {
-  max-width: 100%;
-  width: auto;
-  height: 100;
-  -webkit-filter: brightness(20%);
-  filter: brightness(30%);
-  z-index: 0;
+.mnf-text {
   position: relative;
-}
-
-.text-container {
-  margin: auto;
-  min-height: 100%;
-  max-height: auto;
-  width: auto;
 }
 .first-txt {
   position: absolute;
@@ -263,24 +249,22 @@ header a {
 
 .second-txt {
   position: absolute;
+  line-height: 25px;
   top: 200px;
   left: 50px;
   color: white;
-  z-index: 1;
-  max-width: 40%;
-  line-height: 130%;
+  max-width: 60%;
 }
-
-.mnf .link-button {
+.mnf-text > .link-button {
   position: absolute;
-  top: 380px;
+  top: 370px;
   left: 50px;
-  text-align: left;
 }
 
 /*end of manufacturing section on homepage*/
 
 /*trail section on homepage*/
+
 .trail {
   display: flex;
   flex-direction: row;
@@ -378,7 +362,6 @@ h2 {
   position: relative;
   display: block;
   margin: none;
-  filter: ;
 }
 
 .insulation-image {
@@ -428,11 +411,12 @@ h2 {
 }
 
 hr {
-  width: 97%;
+  width: 100%;
   background-color: white;
   height: 1px;
   border: 0;
   opacity: 20%;
+  margin: 90px 0px;
 }
 
 .footer-nav-left {
@@ -505,12 +489,6 @@ a {
   }
 }
 
-@media (max-width: 800px) {
-  .item {
-    flex: 100%;
-  }
-}
-
 @media screen and (min-width: 400px) {
   .card-container {
     flex-direction: row;
@@ -519,19 +497,33 @@ a {
 
 @media screen and (max-width: 800px) {
   .test-container {
-    margin: none;
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .trail {
     flex-direction: column;
-    margin: 0px;
+    margin: none;
   }
 }
 
 @media screen and (max-width: 700px) {
   .image-one {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer-nav-right {
+    flex-direction: row;
+    margin: 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-nav-right {
+    flex-direction: row;
+    margin: 0%;
   }
 }
