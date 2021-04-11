@@ -5,10 +5,11 @@
   .logo {
     margin-left: 0px;
   }
+
   #hamburger-menu {
     display: none;
-    
   }
+
   #hamburger-menu:checked ~ nav {
     display: inline-block;
   }
@@ -18,6 +19,7 @@
     position: absolute;
     right: 30px;
   }
+
   .nav-links {
     max-width: 200px;
   }
@@ -25,9 +27,11 @@
   nav {
     display: none;
   }
+
   .hamburger-icon {
     display: block;
   }
+
   .header-icons > a {
     display: none;
   }
@@ -41,11 +45,10 @@
     justify-content: center;
     margin: 0px;
   }
-  .welcome-layout {
 
+  .welcome-layout {
     text-align: center;
   }
-
 
   .welcome__content {
     padding: 0px;
@@ -158,21 +161,7 @@
   }
 
 }
-@media screen and (min-width: 600px) and (max-width: 1500px) {
-  .contact-one, .contact-two {
-    margin: 30px 80px 100px 80px;
-  }
-}
 
-@media screen and (min-width: 600px) and (max-width: 922px) {
-  .contact-one, .contact-two {
-    margin: 30px 80px 100px 80px;
-  }
-
-  .wrapper {
-    display: block;
-  }
-}
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .item {
@@ -190,16 +179,11 @@
   .checkout-container {
     display: block;
   }
-}
-
-
-@media screen and (max-width: 900px) {
-
 
   #hamburger-menu {
     display: none;
-    
   }
+
   #hamburger-menu:checked ~ nav {
     display: inline-block;
   }
@@ -213,15 +197,23 @@
   nav {
     display: none;
   }
+
   .hamburger-icon {
     display: block;
   }
+
   .header-icons > a {
     display: none;
   }
+  
+  .wrapper {
+    display: block;
+  }
 }
 
-@media screen and (min-width: 500px) and (max-width: 600px) {
-  
+@media screen and (min-width: 600px) and (max-width: 1500px) {
+  .contact-one, .contact-two {
+    margin: 30px 80px 100px 80px;
+  }
 }
 
