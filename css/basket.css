@@ -1,0 +1,35 @@
+
+
+.container-one {
+ display: flex;
+}
+
+
+.child-one {
+ flex: 1;
+ background-image: url("/images/mens-jackets/mens-shadowrain-jacket.jpg");
+ background-size: cover;
+ background-position: center;
+ height: 293px;
+}
+.child-two {
+ flex: 1;
+ padding: 0px 0px 0px 40px;
+}
+
+.remove {
+ color: #BC2222;
+}
+
+.child-two > h5 {
+ display: inline;
+}
+
+#wrapper {
+ margin: 50px 0px;
+}
+
+
+#similar-products {
+ margin-top: 150px;
+}

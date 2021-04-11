@@ -1,0 +1,17 @@
+
+
+.contact-one, .contact-two {
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.column-one, .column-two {
+    flex: 1;
+}
+
+.make-contact a {
+    margin: 100px 0px;
+    color: var(--color-orange);
+}
+

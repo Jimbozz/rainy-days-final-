@@ -1,0 +1,73 @@
+/*navigation*/
+
+nav li {
+  display: inline;
+  font-family: open-sans, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  align-self: center;
+}
+
+nav li a:hover {
+  color: var(--color-orange);
+  
+}
+.active {
+  color: var(--color-orange);
+  font-weight: 800;
+}
+header a {
+  color: #0a0d00;
+}
+
+
+/*orange button*/
+
+.button {
+  background-color: var(--color-orange);
+  color: #fff;
+  font-size: 1em;
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 60px;
+  border-radius: 2px;
+  text-decoration: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.button:hover {
+  opacity: 1;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+/*link button*/
+.link-button {
+  color: #d67e3e;
+  font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: contents;
+}
+.link-button:hover {
+  opacity: 1;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.fa-arrow-right {
+  margin-left: 3%;
+}
+
+/*checkout button*/
+#checkout-button {
+  width: 100%;
+  margin-top: 70px;
+  border: none;
+  cursor: pointer;
+ }

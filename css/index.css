@@ -1,0 +1,172 @@
+/*Header section*/
+
+.welcome {
+    background-image: url("../images/gore-tex-pro-limited-raincoat.jpg");
+    background-size: cover;
+    background-position: top;
+    min-height: 80vh;
+}
+
+.welcome-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+.welcome__content {
+    flex: 1;
+    padding-left: 80px;
+}
+.welcome__content-one {
+    flex: 1;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin: 0px 40px 40px 0px;
+}
+
+.shop-now {
+    display: contents;
+}
+  
+.header-text-main h1 {
+  white-space: initial;
+}
+  
+  
+.collection-name {
+    margin: auto;
+}
+
+  
+  /*manufacturing section on homepage*/
+  
+.mnf-container {
+  background-image: url("/images/rainydays-manufacture.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 70vh;
+  display: flex;
+  margin: 100px 80px 200px 80px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  padding: 40px;
+}
+.mnf-text {
+  align-self: center;
+  color: white;
+}
+ 
+/*trail section on homepage*/
+  
+.trail {
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  }
+
+.first {
+  flex: 1;
+  text-align: center;
+  background-image: url("/images/trail-running-background.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-first {
+  color: white;
+}
+
+.second {
+  flex: 1;
+  background-image: url("/images/mens-summit-jacket.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.text-right > p {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  margin: 0px;
+}
+.text-right > h2 {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  margin: 0px;
+}
+
+.price-right {
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+  color: var(--color-green);
+  font-weight: bold;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  opacity: 70%;
+}
+.next {
+  right: 20px;
+  border-bottom: 3px solid #0a0d00;
+  border-right: 3px solid #0a0d00;
+  transform: rotate(-45deg);
+  transition: right 0.5s;
+}
+
+.prev {
+  left: 20px;
+  border-bottom: 3px solid #0a0d00;
+  border-left: 3px solid #0a0d00;
+  transform: rotate(45deg);
+  transition: left 0.5s;
+}
+
+.next:hover {
+  right: 1em;
+}
+
+.prev:hover {
+  left: 1em;
+}
+
+/*Insulation section on homepage*/
+
+.insulation-system {
+  background-image: url("/images/gore-tex-pro-light-jacket.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
+  margin-top: 40px;
+}
+
+.insulation-text {
+  margin-top: 80px;
+  text-align: center;
+  color: var(--color-green);
+  line-height: 1.5;
+}
+
+.insulation-button {
+  margin-top: 30px;
+}
+
+.insulation-text p {
+  margin: 0px 250px 0px 250px;
+}

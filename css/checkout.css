@@ -1,0 +1,72 @@
+.required {
+ color: red;
+ margin:  5px 5px;
+}
+
+.checkout-container {
+ display: grid;
+ grid-gap: 80px;
+ margin: 40px 0px;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+
+form {
+ display: contents;
+}
+
+form > label {
+ display: block;
+}
+
+input[type=text],input[type=tel], input[type=email],  select {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid var(--color-line);
+ box-sizing: border-box;
+ margin-top: 6px;
+ margin-bottom: 16px;
+ display: inline-block;
+ resize: none;
+}
+
+input[type=checkbox] {
+ display: inline-block;
+}
+
+textarea {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+ margin-top: 6px;
+ margin-bottom: 16px;
+ display: inline;
+ resize: none;
+}
+
+.card-details {
+ display: flex;
+}
+
+.card-details-info {
+ padding-right: 10px;
+}
+
+
+div > legend {
+ margin: 30px 0px;
+}
+
+fieldset {
+ border: none;
+ padding: 0px;
+}
+
+.terms {
+ color: blue;
+}
+
+
+
+

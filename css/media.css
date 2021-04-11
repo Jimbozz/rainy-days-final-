@@ -1,0 +1,227 @@
+
+
+@media screen and (max-width: 500px) {
+
+  .logo {
+    margin-left: 0px;
+  }
+  #hamburger-menu {
+    display: none;
+    
+  }
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+  }
+
+  .hamburger-icon {
+    color: #0a0d00;
+    position: absolute;
+    right: 30px;
+  }
+  .nav-links {
+    max-width: 200px;
+  }
+
+  nav {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .header-icons > a {
+    display: none;
+  }
+
+  .welcome {
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 70%);
+  }
+
+  .welcome__content-one {
+    align-self: center;
+    justify-content: center;
+    margin: 0px;
+  }
+  .welcome-layout {
+
+    text-align: center;
+  }
+
+
+  .welcome__content {
+    padding: 0px;
+    color: white;
+    min-width: 100%;
+  }
+
+  .staff-picks {
+    margin: 70px 20px 5px 20px;
+  }
+
+  .card-container {
+    margin: 30px 0px;
+  }
+
+  .item {
+    max-width: 100%;
+  }
+
+  .item img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .box {
+    min-width: 100%;
+    height: 300px;
+  }
+
+  .text-right h2 {
+    margin-top: 15px;
+  }
+
+  .insulation-text p {
+    margin: 0px 50px 0px 50px;
+  }
+  .insulation-text {
+    margin-top: 0px;
+    color: white;
+  }
+  .insulation-text h2 {
+    margin-top: 0px;
+  }
+  .insulation-system {
+    min-height: 20vh;
+    padding: 40px 0px;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 70%);
+    margin: 0px;
+  }
+
+  .mnf-container {
+    margin: 0px;
+  }
+
+  .wrapper-grid {
+    display: block;
+  }
+
+  .bottom-footer {
+    display: block;
+  }
+  footer {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .container-one {
+    display: block;
+  }
+
+  .child-two {
+    padding: 0px;
+  }
+
+  .checkout-container {
+    display: block;
+  }
+
+  .order-right, .order-left {
+    margin: 0px;
+  }
+
+  .card-details {
+    display: block;
+  }
+
+  .layout-margin {
+    margin: 60px 20px;
+  }
+
+  .order-container {
+    display: block;
+  }
+
+  .contact-one, .contact-two {
+    display: block;
+    padding: 0px 30px;
+  }
+
+  .left-wrapper >img {
+    height: auto;
+    width: 100%;  
+  }
+
+  .box1> div {
+    display: block;
+  }
+
+}
+@media screen and (min-width: 600px) and (max-width: 1500px) {
+  .contact-one, .contact-two {
+    margin: 30px 80px 100px 80px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 922px) {
+  .contact-one, .contact-two {
+    margin: 30px 80px 100px 80px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .item {
+    height: 350px;
+  }
+
+  .container-one {
+    display: block;
+  }
+
+  .child-two {
+    padding: 0px;
+  }
+
+  .checkout-container {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+  #hamburger-menu {
+    display: none;
+    
+  }
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+  }
+
+  .hamburger-icon {
+    color: #0a0d00;
+    position: absolute;
+    right: 30px;
+  }
+
+  nav {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .header-icons > a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  
+}
+

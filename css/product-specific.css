@@ -1,0 +1,92 @@
+
+
+
+
+/*left wrapper*/
+.left-wrapper >img {
+     
+    height: 80vh;  
+}
+
+/*right wrapper*/
+
+.box1> div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box2 {
+    padding: 30px 0px;
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: var(--color-line);
+    
+    
+}
+.box3 {
+    padding: 30px 0px;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--color-line);
+}
+.box3 p {
+    margin: 0px;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px 0px 0px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 3px white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+.dot:hover {
+    border: none;
+}
+#dot-one {
+    background: #CB513E;
+}
+#dot-two {
+    background: #3455AD;
+}
+#dot-three {
+    background: #37317C;
+}
+#dot-four {
+    background: #F4CC45;
+}
+
+.box4 {
+    padding: 30px 0px;
+    margin: 0px 0px 60px 0px;
+}
+
+
+.size-button {
+    background-color: white;
+    border: solid 1px var(--color-line);
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+  
+.size-button:hover {
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+} 
+
+.box4> .button {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+}
+ 
+.wider-item {
+    flex: 1;
+    max-width: none;
+    height: auto;
+}
+
