@@ -43,7 +43,7 @@ header a {
 
 /*link button*/
 .link-button {
-  color: #d67e3e;
+  color: var(--color-orange);
   font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   text-decoration: none;

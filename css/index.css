@@ -3,7 +3,7 @@
 .welcome {
     background-image: url("../images/gore-tex-pro-limited-raincoat.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     min-height: 80vh;
 }
 
