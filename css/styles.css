@@ -218,9 +218,6 @@ footer {
 }
 /*accordion styles*/
 
-input {
-  display: none;
-}
 
 .contact-container {
   margin-bottom: 100px;
@@ -247,7 +244,11 @@ input {
   margin: 0px;
 }
 
-input + label + .content {
+label + .content {
+  display: none;
+}
+
+#title1, #title2, #title3, #title4 {
   display: none;
 }
 
