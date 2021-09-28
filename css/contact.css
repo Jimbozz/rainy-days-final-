@@ -15,6 +15,11 @@
     color: var(--color-orange);
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
 
 form {
     padding: 2em;
@@ -38,4 +43,10 @@ input {
 label {
     display: block;
     margin-top: 1rem;
+}
+
+button {
+    border: none;
+    margin-top: 1rem;
+    align-self: flex-end;
 }
