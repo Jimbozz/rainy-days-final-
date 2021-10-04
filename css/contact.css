@@ -36,7 +36,6 @@ input {
     font-size: 16px;
     box-sizing: border-box;
     border: 1px solid;
-    
     border-color: var(--color-line);
 }
 
@@ -48,5 +47,19 @@ label {
 button {
     border: none;
     margin-top: 1rem;
-    align-self: flex-end;
+}
+
+.formError {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    border: 1px solid darkgreen;
+    padding: 1rem;
+    background: rgba(12, 92, 39, 0.1);
 }

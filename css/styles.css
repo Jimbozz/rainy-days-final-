@@ -4,6 +4,8 @@
 
 body {
   margin: 0%;
+  font-family: var(--text-paragraph), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
 }
 .layout-margin {
   margin: 60px 80px;
@@ -13,18 +15,11 @@ h1 {
   font-family: var(--text-heading), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2em;
 }
-p, label, input, textarea, #country {
-  font-family: var(--text-paragraph), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
-}
-h2, h3,h4, h5, legend {
+
+
+h2, h3,h4, h5, legend, a {
   font-family: var(--text-heading), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
-
-a {
-  font-family: var(--text-heading), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-}
-
 
 
 
@@ -75,6 +70,17 @@ header {
 }
 .header-icons {
   margin-right: 40px;
+}
+
+.basket-items {
+  position: absolute;
+  top: 26px;
+  right: 43px;
+  background-color: var(--color-orange);
+  color: white;
+  border-radius: 25%;
+  padding: 1px 6px;
+  font-weight: bold;
 }
 
 /*product cards*/

@@ -65,18 +65,18 @@
             </div>
             <form id="contact-form">
               <div>
-                  <label for="name">
+                  <label for="fullName">
                       Full Name (Required)
-                      <input type="text" id="name" name="userName" placeholder="Full Name" required>
+                      <input type="text" id="fullName" name="userName" placeholder="Full Name" required>
                   </label>
-                  <div class="formError" id="nameError">Your name must be longer than 3 characters.</div>
+                  <div class="formError" id="fullNameError">Your name must be longer than 3 characters.</div>
               </div>
               <div>
                   <label for="subject">
                       Subject
                       <input type="text" id="subject" name="subject" placeholder="Subject">
                   </label>
-                  <div class="formError" id="subjectError">Must have a minimum length of 10 characters</div>
+                  <div class="formError" id="subjectError">Must have a minimum length of 4 characters</div>
               </div>
               <div>
                   <label for="email">
@@ -211,6 +211,6 @@
     </div>
   </footer>
   <script src="js/contact.js"></script>
-  <script src="js/components/errorMessage.js"></script>
+  <script src="js/components/alertError.js"></script>
   </body>
 </html>
