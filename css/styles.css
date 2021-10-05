@@ -39,29 +39,19 @@ h2, h3,h4, h5, legend, a {
   flex: 1;
 }
 
-#hamburger-menu, .hamburger-icon {
-  display: none;
-}
-.header-nav {
+.nav-links {
   display: flex;
-  justify-content: space-between;
-  box-shadow: 0 0px 3px -2px rgba(0,0,0,.1);
-}
-
-header div {
-  display: flex;
-  background-color: #f6f6f6;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header {
   align-items: center;
   position: sticky;
+  background-color: #F6F6F6;
   top: 0;
   z-index: 100;
-}
-.nav-links {
-  margin: auto;
 }
 
 .header-icons > a {
@@ -81,6 +71,15 @@ header {
   border-radius: 25%;
   padding: 1px 6px;
   font-weight: bold;
+
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  display: none;
+  
 }
 
 /*product cards*/

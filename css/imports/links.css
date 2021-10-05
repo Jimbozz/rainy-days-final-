@@ -41,6 +41,21 @@ header a {
 }
 
 
+/*cart button*/
+
+.cart-button {
+  border: 1px solid var(--color-line);
+  display: block;
+  padding: 10px 60px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cart-button:hover {
+  border: 1px solid black;
+  color: black;
+}
+
 /*link button*/
 .link-button {
   color: var(--color-orange);
