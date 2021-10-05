@@ -10,7 +10,6 @@ const products = [
 ]
 
 
-
 for(let i=0; i < addCart.length; i++) {
   addCart[i].addEventListener('click', () => {
     addNumbers(products[i]);
@@ -85,4 +84,14 @@ function totalPrice(product) {
   }
   
 }
+
+function cartDisplay() {
+  let itemsInCart = localStorage.getItem("productsInCart");
+  itemsInCart = JSON.parse(itemsInCart);
+
+  console.log(itemsInCart);
+}
+
 onCartReload();
+cartDisplay();
+

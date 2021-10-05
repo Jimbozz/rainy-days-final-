@@ -8,10 +8,11 @@
 .child-one {
  flex: 1;
  background-image: url("/images/mens-jackets/mens-shadowrain-jacket.jpg");
- background-size: cover;
+ background-size: contain;
  background-position: center;
- height: 293px;
+ height: 200px;
 }
+
 .child-two {
  flex: 1;
  padding: 0px 0px 0px 40px;
