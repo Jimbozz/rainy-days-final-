@@ -145,6 +145,7 @@ header {
 .child-three {
   display: flex;
   justify-content: space-between;
+  align-items: center;
  }
  
  .child-four {
