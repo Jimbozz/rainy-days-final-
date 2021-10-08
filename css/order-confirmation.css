@@ -5,13 +5,12 @@
 }
 
 .order-left {
-flex: 1;
-margin: 20px 10px 10px 0px;
-background-image: url("/images/mens-jackets/mens-shadowrain-jacket.jpg");
-background-size: cover;
-background-position: center;
-height: 60vh;
-
+  flex: 1;
+  background-image: url(/images/mens-jackets/mens-shadowrain-jacket.jpg);
+  background-size: contain;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  height: 60vh;
 }
 
 .order-right {
@@ -29,6 +28,10 @@ height: 60vh;
   line-height: 1.5;
   color: var(--color-orange);
   font-style: normal;
+ }
+
+ .order-confirmed {
+   margin-bottom: 2rem;
  }
 
 #back-button {

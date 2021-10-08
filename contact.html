@@ -26,28 +26,28 @@
   </head>
   <body>
   <header>
-    <div class="header-nav">
+    <nav class="nav-links">
       <a href="index.html">
           <img src="/images/rainydays-logo.png" alt="rainy days" class="logo"/>
       </a>
-      <div class="hamburger-mobile">
-        <label for="hamburger-menu" class="hamburger-icon"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu">
-        <nav class="nav-links">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="women.html">Men</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-unique" id="nav-unique">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="women.html">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
       <div class="header-icons">
           <a title="search button" href="#"><i class="fas fa-search"></i></a>
-          <a title="shopping cart button" href="/basket.html"><i class="fas fa-shopping-cart"></i></a>
+          <a title="shopping cart button" href="/basket.html">
+              <i class="fas fa-shopping-cart"></i>
+          </a>
+          <div class="basket-items">0</div>
       </div>
-    </div>
+  </nav>
   </header>
   <main>
     <section>
@@ -98,35 +98,35 @@
       </div>
       <div class="contact-two">
           <div class="column-one">
-            <h3>Popular Questions</h3>
+            <h3>FAQs</h3>
           </div>
           <div class="column-two">
             <div class="contact-container">
               <div class="wider-item">
-                <input type="checkbox" id="title1" />
+                <input type="checkbox" id="title1"/>
                 <label for="title1">
-                    <h4>Delivery</h4>
-                </label>
-                <div class="content">
-                    <p>Your content goes here.</p>
-                </div>
-                <input type="checkbox" id="title2" />
-                <label for="title2">
                     <h4>Description</h4>
                 </label>
                 <div class="content">
                     <p>Your content goes here.</p>
                 </div>
-                <input type="checkbox" id="title3" />
-                <label for="title3">
+                <input type="checkbox" id="title2"/>
+                <label for="title2">
                     <h4>Features</h4>
                 </label>
                 <div class="content">
                     <p>Your content goes here.</p>
                 </div>
-                <input type="checkbox" id="title4" />
+                <input type="checkbox" id="title3"/>
+                <label for="title3">
+                    <h4>Size Guide</h4>class
+                </label>
+                <div class="content">
+                    <p>Your content goes here.</p>
+                </div>
+                <input type="checkbox" id="title4"/>
                 <label for="title4" class="last-label">
-                    <h4>Size Guide</h4>
+                    <h4>Delivery</h4>
                 </label>
                 <div class="content">
                     <p>Your content goes here.</p>
@@ -164,9 +164,9 @@
       <div class="hr" id="hr"></div>
       <div class="wrapper-grid">
         <div>
-          <a href="#" id="wrapper-links"><h3>About Us</h3></a>
-          <a href="#" id="wrapper-links"><h3>Repairs</h3></a>
-          <a href="#" id="wrapper-links"><h3>Contact</h3></a>
+          <a href="#" class="wrapper-links"><h3>About Us</h3></a>
+          <a href="#" class="wrapper-links"><h3>Repairs</h3></a>
+          <a href="#" class="wrapper-links"><h3>Contact</h3></a>
         </div>
         <div>
           <h5 class="footer-header">Contact</h5>

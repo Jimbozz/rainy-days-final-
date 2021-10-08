@@ -66,6 +66,19 @@
     padding: 30px 0px;
 }
 
+.size-container {
+    margin-bottom: 1rem;
+}
+
+.size-guide {
+    color: var(--color-green);
+    font-family: var(--text-paragraph), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.size-guide:hover {
+    text-decoration: underline;
+}
+
 
 .size-button {
     background-color: white;

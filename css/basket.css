@@ -10,6 +10,7 @@
  background-image: url("/images/mens-jackets/mens-shadowrain-jacket.jpg");
  background-size: contain;
  background-position: center;
+ background-repeat: no-repeat;
  height: 200px;
 }
 
@@ -33,4 +34,11 @@
 
 #similar-products {
  margin-top: 150px;
+}
+
+#error {
+  color: rgb(226, 5, 5);
+  background-color: rgba(255, 0, 0, 0.377);
+  padding: 1rem;
+  border: 1px solid red;
 }

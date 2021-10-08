@@ -26,28 +26,28 @@
     </head>
     <body>
         <header>
-            <div class="header-nav">
+            <nav class="nav-links">
                 <a href="index.html">
                     <img src="/images/rainydays-logo.png" alt="rainy days" class="logo"/>
                 </a>
-                <div class="hamburger-mobile">
-                    <label for="hamburger-menu" class="hamburger-icon"><i class="fas fa-bars"></i></label>
-                    <input type="checkbox" id="hamburger-menu">
-                    <nav class="nav-links">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="women.html" class="active">Women</a></li>
-                            <li><a href="women.html">Men</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-unique" id="nav-unique">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="women.html">Men</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
                 <div class="header-icons">
                     <a title="search button" href="#"><i class="fas fa-search"></i></a>
-                    <a title="shopping cart button" href="/basket.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a title="shopping cart button" href="/basket.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="basket-items">0</div>
                 </div>
-            </div>
+            </nav>
         </header>
         <main>
 			<section class="layout-margin">
@@ -56,9 +56,9 @@
 					</div>
 					<div class="order-right">
 						<h1>Order Confirmed!</h1>
-						<p>We will review your order and ship it as soon as possible. Your order should be with you within 7-10 working days. If you have any questions please feel free to reach out to us at:
+						<p>Thank you for your purchase. Your order should be with you within 7-10 working days. If you have any questions please feel free to reach out to us at:
 						</p>
-						<address><a href="mailto:contact@rainydays.com" class="email-address">contact@rainydays.com</a>
+						<address class="order-confirmed"><a href="mailto:contact@rainydays.com" class="email-address">contact@rainydays.com</a>
 						</address>
 						<a href="index.html" class="button">Back to website</a>
 					</div>
@@ -92,9 +92,9 @@
                 <div class="hr" id="hr"></div>
                 <div class="wrapper-grid">
                     <div>
-                        <a href="#" id="wrapper-links"><h3>About Us</h3></a>
-                        <a href="#" id="wrapper-links"><h3>Repairs</h3></a>
-                        <a href="#" id="wrapper-links"><h3>Contact</h3></a>
+                        <a href="#" ="wrapper-links"><h3>About Us</h3></a>
+                        <a href="#" ="wrapper-links"><h3>Repairs</h3></a>
+                        <a href="#" ="wrapper-links"><h3>Contact</h3></a>
                     </div>
                     <div>
                         <h5 class="footer-header">Contact</h5>
@@ -138,5 +138,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/product.js"></script>
 	</body>
 </html>

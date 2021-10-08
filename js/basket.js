@@ -1,17 +1,18 @@
 function cartDisplay() {
-  var itemsInCart = localStorage.getItem("productsInCart");
+  let itemsInCart = localStorage.getItem("productsInCart");
   itemsInCart = JSON.parse(itemsInCart);
-  var productQuantity = localStorage.getItem("addNumbers");
+  let productQuantity = localStorage.getItem("addNumbers");
   productQuantity = JSON.parse(productQuantity);
-  var containerOne = document.querySelector(".container-one");
-  var containerTwo = document.querySelector(".container-two");
-  var cost = localStorage.getItem('totalPrice');
+  let containerOne = document.querySelector(".container-one");
+  let containerTwo = document.querySelector(".container-two");
+  let cost = localStorage.getItem("totalPrice");
+ 
 
 
 
   if (itemsInCart && containerOne) {
     containerOne.innerHTML = '';
-
+    
     Object.values(itemsInCart).map(item => {
       containerOne.innerHTML += `
       
@@ -61,21 +62,16 @@ function cartDisplay() {
                 <a href="checkout.html" class="button" id="checkout-button">Continue to Checkout</a>
     
     `
-
   }
-//   function quantityClick(event) {
-//     var btnPlus = document.querySelector(".fa-plus-circle");
-//     var btnMinus = document.querySelector(".fa-minus-circle");
+  else {
 
-//   }
+    containerTwo.innerHTML = `
 
-//   document.querySelector(".fa-plus-circle").onclick = function changeContent() {
+    <div id="error">Hmmm it seems as though you don't have any products in your basket.</div>
+           
+    `
+  }
 
-//     document.querySelector(".total-quantity").textContent = productQuantity + 1;
-//     document.querySelector(".fa-plus-circle").style = "Color: red";
- 
-//  }
-  
 }
 
 cartDisplay();
