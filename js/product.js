@@ -97,6 +97,18 @@ cartDisplay();
 
 
 
+const addToCart = document.querySelector('.cart-button');
+const checkoutBt = document.querySelector('#checkout-button');
+
+
+function selectSize() {
+  addToCart.disabled = false;
+}
+
+function viewCart() {
+  checkoutBt.disabled = false;
+}
+
 
 
 

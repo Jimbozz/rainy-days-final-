@@ -78,7 +78,7 @@
                         </div>
                         <div class="box4">
                             <div class="size-container">
-                                <button class="size-button">XS</button>
+                                <button class="size-button" onclick="selectSize()">XS</button>
                                 <button class="size-button">S</button>
                                 <button class="size-button">M</button>
                                 <button class="size-button">L</button>
@@ -86,8 +86,8 @@
                                 <button class="size-button">XXL</button>
                             </div>
                             <a href="#" class="size-guide">Size guide</a>
-                            <a href="#" class="cart-button add-cart" id="cart-button">+ Add to cart</a>
-                            <a href="basket.html" class="button" id="checkout-button">Continue to Checkout</a>
+                            <button href="#" class="cart-button add-cart" id="cart-button" onclick="viewCart()" disabled>+ Add to cart</button>
+                            <a href="/basket.html"><button class="button" id="checkout-button" disabled>Continue to Checkout</button></a>
                         </div>
                         <div class="box5">
                             <div class="contact-container">
