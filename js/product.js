@@ -101,7 +101,7 @@ const addToCart = document.querySelector('.cart-button');
 const checkoutBt = document.querySelector('#checkout-button');
 
 
-function selectSize() {
+function selectSize(event) {
   addToCart.disabled = false;
 }
 

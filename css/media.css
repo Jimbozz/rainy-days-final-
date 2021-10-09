@@ -158,23 +158,41 @@
 
 @media screen and (max-width: 768px){
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   .header-icons {
     display: none;
   }
 
-  .hamburger {
+  .burger {
     display: block;
   }
 
   .nav-unique {
-    display: none;
-    width: 100%;
+    position: absolute;
+    right: 0px;
+    top: 7vh;
+    height: 92vh;
+    background-color: #F6F6F6;
+    display: flex;
     flex-direction: column;
+    width: 40vw;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 8rem;
   }
 
-  .nav-unique.show {
-    display: flex;
+  .nav-active {
+    transform: translateX(0%);
   }
+
+  .nav-unique li {
+    opacity: 0;
+  }
+
+  
 
   .header-icons {
     display: none;
