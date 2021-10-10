@@ -51,8 +51,9 @@ header a {
 }
 
 .cart-button:active {
-  border: 1px solid black;
-  color: black;
+  border: none;
+  color: white;
+  background: var(--color-orange);
 }
 
 
