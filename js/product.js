@@ -103,17 +103,12 @@ let sizeError = document.querySelector('#cartError');
 
 
 function selectSize(event) {
+  
   addToCart.disabled = false;
   
 }
 
 function viewCart() {
+
   checkoutBt.disabled = false;
 }
-
-
-
-
-
-
-
