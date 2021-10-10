@@ -1,11 +1,12 @@
 /*Header section*/
 
 .welcome {
-    background-image: url("../images/ophelie-authier-X0SMdQSQwzc-unsplash\ \(1\).jpg");
+    background-image: url("/images/rainy-days-homepage.jpg");
     background-size: cover;
     background-position: center 80%;
     min-height: 80vh;
     box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 63%);
+    text-align: center;
 }
 
 .welcome-layout {

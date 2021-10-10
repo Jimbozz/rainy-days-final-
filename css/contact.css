@@ -1,5 +1,7 @@
 
-
+main {
+    padding: 40px;
+}
 .contact-one, .contact-two {
     display: flex;
     margin-bottom: 100px;
