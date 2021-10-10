@@ -73,10 +73,11 @@
 .size-guide {
     color: var(--color-green);
     font-family: var(--text-paragraph), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
 }
 
 .size-guide:hover {
-    text-decoration: underline;
+    color: var(--color-orange);
 }
 
 
@@ -106,3 +107,10 @@
     height: auto;
 }
 
+
+.buttonError {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}

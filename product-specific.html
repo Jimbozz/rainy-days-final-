@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Rainy Days</title>
+        <title>M's Calcite Jacket</title>
         <meta charset="UTF-8" />
-        <meta name="description" content="Womens jackets jand made in Italy"/>
+        <meta name="description" content="Product description will go here with javascript"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -30,13 +30,10 @@
                 <a href="index.html">
                     <img src="/images/rainydays-logo.png" alt="rainy days" class="logo"/>
                 </a>
-                <button class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                </button>
                 <ul class="nav-unique" id="nav-unique">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="women.html">Women</a></li>
-                    <li><a href="women.html">Men</a></li>
+                    <li><a href="men.html">Men</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -46,6 +43,11 @@
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                     <div class="basket-items">0</div>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </nav>
         </header>
@@ -85,6 +87,7 @@
                                 <button class="size-button">XL</button>
                                 <button class="size-button">XXL</button>
                             </div>
+                            <div class="buttonError" id="cartError">Please select a size.</div>
                             <a href="#" class="size-guide">Size guide</a>
                             <button href="#" class="cart-button add-cart" id="cart-button" onclick="viewCart()" disabled>+ Add to cart</button>
                             <a href="/basket.html"><button class="button" id="checkout-button" disabled>Continue to Checkout</button></a>
@@ -187,9 +190,9 @@
                 <div class="hr" id="hr"></div>
                 <div class="wrapper-grid">
                     <div>
-                        <a href="#" ="wrapper-links"><h3>About Us</h3></a>
-                        <a href="#" ="wrapper-links"><h3>Repairs</h3></a>
-                        <a href="#" ="wrapper-links"><h3>Contact</h3></a>
+                        <a href="#" class="wrapper-links"><h3>About Us</h3></a>
+                        <a href="#" class="wrapper-links"><h3>Repairs</h3></a>
+                        <a href="#" class="wrapper-links"><h3>Contact</h3></a>
                     </div>
                     <div>
                         <h5 class="footer-header">Contact</h5>

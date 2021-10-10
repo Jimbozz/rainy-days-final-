@@ -49,7 +49,7 @@ function setProductItems(product) {
 
   let itemsInCart = localStorage.getItem('productsInCart');
   itemsInCart = JSON.parse(itemsInCart);
-  console.log("my cart items are", itemsInCart);
+
 
 if(itemsInCart != null) {
 
@@ -89,7 +89,6 @@ function cartDisplay() {
   let itemsInCart = localStorage.getItem("productsInCart");
   itemsInCart = JSON.parse(itemsInCart);
 
-  console.log(itemsInCart);
 }
 
 onCartReload();
@@ -97,12 +96,15 @@ cartDisplay();
 
 
 
+
 const addToCart = document.querySelector('.cart-button');
 const checkoutBt = document.querySelector('#checkout-button');
+let sizeError = document.querySelector('#cartError');
 
 
 function selectSize(event) {
   addToCart.disabled = false;
+  
 }
 
 function viewCart() {

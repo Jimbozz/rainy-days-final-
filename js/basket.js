@@ -1,17 +1,18 @@
 function cartDisplay() {
-  let itemsInCart = localStorage.getItem("productsInCart");
+  let itemsInCart = localStorage.getItem('productsInCart');
   itemsInCart = JSON.parse(itemsInCart);
-  let productQuantity = localStorage.getItem("addNumbers");
+  let productQuantity = localStorage.getItem('addNumbers');
   productQuantity = JSON.parse(productQuantity);
-  let containerOne = document.querySelector(".container-one");
-  let containerTwo = document.querySelector(".container-two");
-  let cost = localStorage.getItem("totalPrice");
+  let containerOne = document.querySelector('.container-one');
+  let containerTwo = document.querySelector('.container-two');
+  let cost = localStorage.getItem('totalPrice');
  
 
 
 
   if (itemsInCart && containerOne) {
     containerOne.innerHTML = '';
+
     
     Object.values(itemsInCart).map(item => {
       containerOne.innerHTML += `
@@ -60,7 +61,6 @@ function cartDisplay() {
                     </div>
                 </div>
                 <a href="checkout.html" class="button" id="checkout-button">Continue to Checkout</a>
-    
     `
   }
   else {

@@ -47,12 +47,14 @@ header a {
   padding: 10px 60px;
   text-align: center;
   margin-top: 1rem;
+  width: 100%;
 }
 
-.cart-button:hover {
+.cart-button:active {
   border: 1px solid black;
   color: black;
 }
+
 
 /*link button*/
 .link-button {
