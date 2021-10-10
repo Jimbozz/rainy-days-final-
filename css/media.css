@@ -1,52 +1,50 @@
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
-  .logo {
-    margin-left: 0px;
+  html, body {
+    overflow-x: hidden;
   }
 
-  .hamburger-icon {
-    color: #0a0d00;
-    position: absolute;
-    right: 30px;
+  .header-icons {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  nav {
+  .basket-items {
     display: none;
   }
 
-  .nav-links {
-    justify-content: space-between;
-  }
-  
-
-  .hamburger-icon {
+  .burger {
     display: block;
   }
 
-  .header-nav {
-    display: block;
+  .nav-unique {
+    position: absolute;
+    right: 0px;
+    top: 7vh;
+    height: 92vh;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40vw;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 8rem;
   }
 
-  .welcome {
-    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 70%);
+  .header-icons {
+    margin-right: 0;
+    padding-left: 0;
   }
 
-  .welcome__content-one {
-    align-self: center;
-    justify-content: center;
-    margin: 0px;
+  .nav-active {
+    transform: translateX(0%);
   }
 
-  .welcome-layout {
-    text-align: center;
-  }
-
-  .welcome__content {
-    padding: 0px;
-    color: white;
-    min-width: 100%;
+  .nav-unique li {
+    opacity: 0;
   }
 
   .staff-picks {
@@ -78,13 +76,16 @@
   .insulation-text p {
     margin: 0px 50px 0px 50px;
   }
+
   .insulation-text {
     margin-top: 0px;
     color: white;
   }
+
   .insulation-text h2 {
     margin-top: 0px;
   }
+
   .insulation-system {
     min-height: 20vh;
     padding: 40px 0px;
@@ -116,7 +117,7 @@
   }
 
   .child-two {
-    padding: 0px;
+    margin-top: 3rem;
   }
 
   .checkout-container {
@@ -153,95 +154,16 @@
     display: block;
   }
 
-
-}
-
-@media screen and (max-width: 768px){
-
-  html, body {
-    overflow-x: hidden;
-  }
-
-  .header-icons {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .basket-items {
-    top: 350px;
-    right: 234px;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .nav-unique {
-    position: absolute;
-    right: 0px;
-    top: 7vh;
-    height: 92vh;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    padding-top: 8rem;
-  }
-
-  .nav-active {
-    transform: translateX(0%);
-  }
-
-  .nav-unique li {
-    opacity: 0;
-  }
-
-}
-
-
-@media screen and (min-width: 600px) and (max-width: 900px) {
-
-  .item {
-    height: 350px;
-  }
-
-  .container-one {
-    display: block;
-  }
-
-  .child-two {
-    padding: 0px;
+  .left-wrapper >img {
+    height: 100%;
+    width: 100%;
   }
 
   .checkout-container {
     display: block;
   }
-
-
-  .hamburger-icon {
-    color: #0a0d00;
-    position: absolute;
-    right: 30px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: block;
-  }
-  
-  .wrapper {
-    display: block;
-  }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1500px) {
-  .contact-one, .contact-two {
-    margin: 30px 80px 100px 80px;
-  }
-}
+
+
 
