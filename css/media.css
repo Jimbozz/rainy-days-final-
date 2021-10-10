@@ -163,7 +163,13 @@
   }
 
   .header-icons {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .basket-items {
+    top: 350px;
+    right: 234px;
   }
 
   .burger {
@@ -192,11 +198,6 @@
     opacity: 0;
   }
 
-  
-
-  .header-icons {
-    display: none;
-  }
 }
 
 
