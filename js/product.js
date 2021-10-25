@@ -112,3 +112,4 @@ function viewCart() {
 
   checkoutBt.disabled = false;
 }
+
