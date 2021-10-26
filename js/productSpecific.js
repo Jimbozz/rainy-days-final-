@@ -6,20 +6,13 @@ const queryString = document.location.search;
 const getNum = queryString.replace( /^\D+/g, '');
 const updatedUrl = url + "?include=" + getNum;
 
-
 console.log(updatedUrl);
-
-
-
-
 async function getProducts() {
 
   try {
      const response = await fetch(updatedUrl);
      const getResults = await response.json();
      createHTML(getResults);
-
-     console.log(getResults);
     
   }
   catch(error) {
@@ -30,13 +23,10 @@ async function getProducts() {
 
 getProducts();
 
-
-
 function createHTML(products) {
   products.forEach(function(product) {
     productImage.innerHTML += `
         <img src="${product.images[0].src}" alt="${product.name}">
-        <h2>Products</h2>
       `;
 
     box1.innerHTML = `
@@ -45,12 +35,12 @@ function createHTML(products) {
             <h3>$${product.prices.price}</h3>
         </div>
     `;
+
     box2.innerHTML = `
         <p>
           ${product.description}
         </p>
     `;
- 
   })
 }
 
