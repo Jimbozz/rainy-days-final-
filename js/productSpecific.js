@@ -1,10 +1,13 @@
 const url = "http://localhost/rainy-days-v2/index.php/wp-json/wc/store/products";
 const productImage = document.querySelector(".left-wrapper");
-const updatedURL = window.location.href;
+const box1 = document.querySelector(".box1");
+const box2 = document.querySelector(".box2");
+const queryString = document.location.search;
+const getNum = queryString.replace( /^\D+/g, '');
+const updatedUrl = url + "?include=" + getNum;
 
 
-console.log(updatedURL);
-
+console.log(updatedUrl);
 
 
 
@@ -12,12 +15,12 @@ console.log(updatedURL);
 async function getProducts() {
 
   try {
-     const response = await fetch(updatedURL);
+     const response = await fetch(updatedUrl);
      const getResults = await response.json();
      createHTML(getResults);
-     console.log(updatedURL);
+
+     console.log(getResults);
     
-  
   }
   catch(error) {
     console.log("what happened here!");
@@ -32,11 +35,22 @@ getProducts();
 function createHTML(products) {
   products.forEach(function(product) {
     productImage.innerHTML += `
-        <img src="${product.images.src}" alt="${product.name}">
-        <h2>Hello</h2>
+        <img src="${product.images[0].src}" alt="${product.name}">
+        <h2>Products</h2>
       `;
 
-      
+    box1.innerHTML = `
+        <div>
+            <h1>${product.name}</h1>
+            <h3>$${product.prices.price}</h3>
+        </div>
+    `;
+    box2.innerHTML = `
+        <p>
+          ${product.description}
+        </p>
+    `;
+ 
   })
 }
 
