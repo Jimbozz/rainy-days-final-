@@ -1,5 +1,5 @@
 const featured = document.querySelector(".card-container");
-const link = "http://localhost/rainy-days-v2/index.php/wp-json/wc/store/products?featured=true";
+const link = "https://jamesbadenhorst.one/index.php/wp-json/wc/store/products?featured=true";
 const bodyTag = document.querySelector(".run-scripts");
 
 

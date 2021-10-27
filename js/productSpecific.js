@@ -1,4 +1,4 @@
-const url = "http://localhost/rainy-days-v2/index.php/wp-json/wc/store/products";
+const url = "https://jamesbadenhorst.one/index.php/wp-json/wc/store/products";
 const productImage = document.querySelector(".left-wrapper");
 const box1 = document.querySelector(".box1");
 const box2 = document.querySelector(".box2");
