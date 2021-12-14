@@ -158,6 +158,14 @@
   .checkout-container {
     display: block;
   }
+
+  .about-layout {
+    margin: 100px 20px;
+  }
+
+  .about-content {
+    max-width: 80vw;
+  }
 }
 
 

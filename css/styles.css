@@ -5,7 +5,7 @@
 body {
   margin: 0%;
   font-family: var(--text-paragraph), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .layout-margin {
   margin: 60px 80px;
@@ -17,8 +17,14 @@ h1 {
 }
 
 
-h2, h3,h4, h5, legend, a {
+h2, h3,h4, h5, legend {
   font-family: var(--text-heading), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  font-family: var(--text-paragraph), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 
@@ -130,7 +136,6 @@ header {
 .card-price {
   margin: auto;
   margin-top: 5px;
-  color: var(--color-grey);
   font-size: 1.1em;
 }
 
@@ -150,6 +155,7 @@ header {
   padding: 0px;
   margin: 0px 0px 50px 0px;
   max-width: 320px;
+  color: var(--color-green);
 }
  
 .item img {
@@ -234,12 +240,15 @@ footer {
   align-items: center;
 }
 
-.wrapper-grid  ul, a {
-  padding: 0px;
-  list-style-type: none;
-  text-decoration: none;
+.address > a, .footer-links a, .bottom-info > a {
   color: var(--color-grey);
 }
+
+.footer-links ul {
+  padding: 0px;
+  list-style: none;
+}
+
 .footer-links {
   line-height: 1.8;
 }
@@ -247,6 +256,8 @@ footer {
   display: flex;
   gap: 20px;
 }
+
+
 
 .footer-wrapper a:hover {
   text-decoration: underline;

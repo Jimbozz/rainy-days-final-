@@ -10,11 +10,10 @@ nav li a:hover {
   
 }
 .active {
-  color: var(--color-orange);
   font-weight: 800;
 }
 header a {
-  color: #0a0d00;
+  color: var(--color-green);
 }
 
 
@@ -59,7 +58,7 @@ header a {
 
 /*link button*/
 .link-button {
-  color: var(--color-orange);
+  color: white;
   font-family: montserrat, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   text-decoration: none;
@@ -69,7 +68,7 @@ header a {
   cursor: pointer;
   display: contents;
 }
-.link-button:hover {
+.link-button:focus {
   opacity: 1;
   opacity: 0.6;
   transition: 0.3s;
