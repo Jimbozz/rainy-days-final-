@@ -144,17 +144,20 @@ header {
   transition: all .2s ease-in-out; 
 }
 
-.card-container {
+/* .card-container {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
   margin: 20px 0px 120px 0px;
+} */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
 }
  
 .item {
-  padding: 0px;
   margin: 0px 0px 50px 0px;
-  max-width: 320px;
   color: var(--color-green);
 }
  
