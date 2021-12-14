@@ -23,6 +23,8 @@ async function getProducts() {
 
 getProducts();
 
+
+
 function createHTML(products) {
   products.forEach(function(product) {
     productImage.innerHTML += `
