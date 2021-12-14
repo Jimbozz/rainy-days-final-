@@ -31,7 +31,7 @@ form {
     box-shadow: 3px 3px 3px rgba(192, 206, 202, 0.3);
 }
 
-input {
+input, textarea {
     width: 100%;
     margin-top: 2px;
     padding: 10px 10px;
@@ -54,7 +54,6 @@ button {
 .formError {
     display: none;
     color: red;
-    font-size: 0.9rem;
     margin-top: 2px;
 }
 

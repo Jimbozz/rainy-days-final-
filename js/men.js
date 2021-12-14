@@ -8,21 +8,9 @@ async function getProducts() {
      const getResults = await response.json();
      console.log(getResults);
 
-    for(let i = 0; i < getResults.length; i++) {
+    createHTML(getResults);
 
-      productContainer.innerHTML += `
-      <a href="/product-specific.html?id=${getResults[i].id}">
-        <div class="item one">
-          <img src="${getResults[i].images[0].src}" alt="${getResults[i].name}">
-          <h3>${getResults[i].name}</h3>
-          <p class="card-price">$${getResults[i].prices.price}</p>
-        </div>
-      </a>
-      `;
-
-    }
-
-    }
+  }
   
   catch(error) {
     console.log(error);
@@ -30,3 +18,21 @@ async function getProducts() {
 }
 
 getProducts();
+
+
+
+function createHTML(getResults) {
+  for(let i = 0; i < getResults.length; i++) {
+    console.log(getResults[i].prices.price);
+
+    productContainer.innerHTML += `
+    <a href="/product-specific.html?id=${getResults[i].id}">
+      <div class="item one">
+        <img src="${getResults[i].images[0].src}" alt="${getResults[i].name}">
+        <h3>${getResults[i].name}</h3>
+        <p class="card-price">$${getResults[i].prices.price}</p>
+      </div>
+    </a>
+    `;
+  }
+}

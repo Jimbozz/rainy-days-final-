@@ -9,10 +9,10 @@ function formVal(event) {
 
   event.preventDefault();
 
-  const name = document.querySelector("#fullName");
-  const subject = document.querySelector("#subject");
-  const email = document.querySelector("#email");
-  const message = document.querySelector("#message");
+  const name = document.querySelector("#your-name");
+  const subject = document.querySelector("#your-subject");
+  const email = document.querySelector("#your-email");
+  const message = document.querySelector("#your-message");
 
   if(checkLength(name.value, 3) === true) {
     nameErr.style.display = "none";
