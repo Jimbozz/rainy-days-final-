@@ -47,7 +47,7 @@ function createHTML(getResults) {
     console.log(getResults[i].prices.price);
 
     productContainer.innerHTML += `
-    <a href="/product-specific.html?id=${getResults[i].id}">
+    <a title="${getResults[i].name}" href="/product-specific.html?id=${getResults[i].id}">
       <div class="item one">
         <img src="${getResults[i].images[0].src}" alt="${getResults[i].name}">
         <h3>${getResults[i].name}</h3>

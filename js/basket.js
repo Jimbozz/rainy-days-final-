@@ -20,16 +20,16 @@ function cartDisplay() {
           <div class="child-one">
           </div>
           <div class="child-two">
-              <h5>${item.name}</h5>
-              <p>Size: L / Burnt Orange</p>
-              <p>Price per item: $${item.price}</p>
-              <div class="quantity">
-                Quantity:
-                <i class="fas fa-minus-circle"></i>
-                <span class="total-quantity">${item.inCart}</span>
-                <i class="fas fa-plus-circle"></i>
-              </div>
-              <a href="#" class="remove"><p>Remove</p></a>
+            <h5>${item.name}</h5>
+            <p>Size: L / Burnt Orange</p>
+            <p>Price per item: $${item.price}</p>
+            <div class="quantity">
+              Quantity:
+              <i class="fas fa-minus-circle"></i>
+              <span class="total-quantity">${item.inCart}</span>
+              <i class="fas fa-plus-circle"></i>
+            </div>
+            <a title="remove item from cart" href="#" class="remove"><p>Remove</p></a>
           </div>
           `;
 
@@ -60,7 +60,7 @@ function cartDisplay() {
                         <h4>$${cost}</h4>
                     </div>
                 </div>
-                <a href="checkout.html" class="button" id="checkout-button">Continue to Checkout</a>
+                <a title="goes to checkout page" href="checkout.html" class="button" id="checkout-button">Continue to Checkout</a>
     `
   }
   else {

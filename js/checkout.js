@@ -9,12 +9,14 @@ subTotal.innerHTML = `
   <h5>FREE</h5>
   <h5>-</h5>
   </div>
-  `;
+  `
+;
 
 
 total.innerHTML = `
   <div class="order-total2">
   <h5>$${cost}</h5>
   </div>
-  `;
+  `
+;
 
