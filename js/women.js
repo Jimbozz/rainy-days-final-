@@ -1,35 +1,30 @@
 const url = "https://jamesbadenhorst.one/index.php/wp-json/wc/store/products?exclude=17,19,21";
-
 const productContainer = document.querySelector(".card-container");
+const priceLow = document.querySelector('input[name=product-checkbox-low]');
 
 async function getProducts() {
 
   try {
-     const response = await fetch(url);
-     const getResults = await response.json();
-     console.log(getResults);
-     
+    const response = await fetch(url);
+    const getResults = await response.json();
+    console.log(getResults);
+    
 
-     createHTML(getResults);
+    createHTML(getResults);
 
-
-      // var checkboxLow = document.querySelector('input[name=price-low]');
-      // var checkboxHigh = document.querySelector('input[name=price-high]');
     
+    //Product price filter
+    priceLow.addEventListener('change', function() {
     
-    
-      // [document.querySelector('input[name=price-low]'), document.querySelector('input[name=price-high]')].forEach(checkboxes => {
-      //   checkboxes.addEventListener('change', function(event) {
-      //     if (checkboxLow.checked) {
-      //       console.log("prices Low");
-      //       getResults.reverse();
-      //   } else if(checkboxHigh.checked) {
-      //     console.log("Prices High");
-      //   }
-      //   });
-      // });
-      
-    
+      if(this.checked) { 
+        productContainer.innerHTML = "";
+        createHTML(getResults.reverse());
+      }
+      else {
+        productContainer.innerHTML = "";
+        createHTML(getResults.reverse());
+      }
+    });
   }
   catch(error) {
     console.log(error);
@@ -38,13 +33,10 @@ async function getProducts() {
 
 getProducts();
 
-
-
-
+//HTML creation for product cards
 
 function createHTML(getResults) {
   for(let i = 0; i < getResults.length; i++) {
-    console.log(getResults[i].prices.price);
 
     productContainer.innerHTML += `
     <a title="${getResults[i].name}" href="/product-specific.html?id=${getResults[i].id}">

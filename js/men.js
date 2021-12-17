@@ -1,14 +1,28 @@
 const url = "https://jamesbadenhorst.one/index.php/wp-json/wc/store/products?exclude=11,13,15";
 const productContainer = document.querySelector(".card-container");
+const priceLow = document.querySelector('input[name=product-checkbox-low]');
 
 async function getProducts() {
 
   try {
-     const response = await fetch(url);
-     const getResults = await response.json();
-     console.log(getResults);
+    const response = await fetch(url);
+    const getResults = await response.json();
+
 
     createHTML(getResults);
+
+    //Product price filter
+    priceLow.addEventListener('change', function() {
+    
+      if(this.checked) { 
+        productContainer.innerHTML = "";
+        createHTML(getResults.reverse());
+      }
+      else {
+        productContainer.innerHTML = "";
+        createHTML(getResults.reverse());
+      }
+    });
 
   }
   
