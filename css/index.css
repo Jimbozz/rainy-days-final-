@@ -16,6 +16,8 @@
     align-items: center;
     min-height: 80vh;
     color: white;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 .welcome-heading {
