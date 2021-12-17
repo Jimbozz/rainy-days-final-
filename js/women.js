@@ -7,9 +7,7 @@ async function getProducts() {
   try {
     const response = await fetch(url);
     const getResults = await response.json();
-    console.log(getResults);
     
-
     createHTML(getResults);
 
     
@@ -37,7 +35,7 @@ getProducts();
 
 function createHTML(getResults) {
   for(let i = 0; i < getResults.length; i++) {
-
+ 
     productContainer.innerHTML += `
     <a title="${getResults[i].name}" href="/product-specific.html?id=${getResults[i].id}">
       <div class="item one">

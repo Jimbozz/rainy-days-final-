@@ -54,6 +54,7 @@
 .mnf-text {
   align-self: center;
   color: white;
+  max-width: 80vw;
 }
 
 .mnf-button {
@@ -86,6 +87,8 @@
 
 .heading-first {
   color: white;
+  max-width: 80vw;
+  margin: 0 auto;
 }
 
 .second {
@@ -153,6 +156,7 @@
 
 .insulation-system {
   background-image: url("/images/gore-tex-pro-light-jacket.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
@@ -164,12 +168,10 @@
   text-align: center;
   color: var(--color-green);
   line-height: 1.5;
+  max-width: 80vw;
+  margin: 0 auto;
 }
 
 .insulation-button {
   margin-top: 30px;
-}
-
-.insulation-text p {
-  margin: 0px 250px 0px 250px;
 }

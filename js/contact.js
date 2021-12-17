@@ -5,6 +5,7 @@ const emailErr = document.querySelector("#emailError");
 const messageErr = document.querySelector("#messageError");
 
 
+
 function formVal(event) {
 
   event.preventDefault();
@@ -41,6 +42,7 @@ function formVal(event) {
   if (checkLength(name.value, 0) && checkLength(subject.value, 0) && emailVal(email.value) && checkLength(message.value, 20) === true) {
 
     form.onsubmit = function formSuccess() {
+      
       form.innerHTML = `
                       <div class="success"> Your form was submitted successfully.
                       </div>
