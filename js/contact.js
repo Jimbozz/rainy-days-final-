@@ -76,3 +76,27 @@ function emailVal(email) {
   const matches = regEx.test(email);
   return matches;
 }
+
+
+async function onSubmit(event) {
+  event.preventDefault(); 
+  
+  try {
+    const response = await fetch(event.target.action, {
+      method: form.method,
+      body: new FormData(form)
+         
+    });
+    const data = await response.json();
+    console.log(data);
+    
+    // submitSuccess();
+
+  } catch(error) {
+    
+    // submitFail();
+    console.log(error);
+  }
+}
+
+form.onsubmit = onSubmit;
